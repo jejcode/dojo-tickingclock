@@ -8,8 +8,8 @@ setInterval( function() {
     var time = getSecondsSinceStartOfDay();
     console.log(time);
     // your code here
-    document.getElementById('hour').style['transform'] = `rotate(${time/120  + 180 }deg)`
-    document.getElementById('minutes').style['transform'] = `rotate(${time%3600/60 * 6 + 180}deg)`
-    document.getElementById('seconds').style['transform'] = `rotate(${time*6 + 180}deg)`
+    hour.style['transform'] = `rotate(${time/120  + 180 }deg)`
+    minutes.style['transform'] = `rotate(${time%3600/60 * 6 + 180}deg)`
+    seconds.style['transform'] = `rotate(${time*6 + 180}deg)`
 
 }, 1000);  
