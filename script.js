@@ -9,7 +9,7 @@ setInterval( function() {
     console.log(time);
     // your code here
     hour.style['transform'] = `rotate(${time/120  + 180 }deg)`
-    minutes.style['transform'] = `rotate(${time%3600/60 * 6 + 180}deg)`
+    minutes.style['transform'] = `rotate(${time/60 * 6 + 180}deg)`
     seconds.style['transform'] = `rotate(${time*6 + 180}deg)`
 
 }, 1000);  
